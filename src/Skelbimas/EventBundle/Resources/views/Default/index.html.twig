@@ -1,1 +1,7 @@
-Hello {{ name }}!
+{% extends '::base.html.twig' %}
+
+{% block body %}
+	<h2>Mašinos pavadinimas</h2>
+	{{event.marke}}
+	{{event.modelis}}
+{% endblock %}
